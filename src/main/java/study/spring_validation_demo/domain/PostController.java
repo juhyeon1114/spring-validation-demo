@@ -24,4 +24,9 @@ public class PostController {
         return postRequest;
     }
 
+    @PostMapping("/custom")
+    public PostRequest3 custom(@Valid @RequestBody PostRequest3 postRequest) {
+        return postRequest;
+    }
+
 }
